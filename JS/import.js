@@ -16,10 +16,7 @@ function addProd(data) {
                 <img src="${prod.image}"></img>
                 <p>${prod.nome}</p>
                 <p2>R$ ${prod.preco.toFixed(2).replace(".", ",")}</p2>
-                <button id='addCart' onclick="addCart('${prod.nome}',${
-        prod.preco
-      })"><h3>+Carrinho</h3></button>
-                <div id="popup"><p>Adicionado ao carrinho</p></div>
+                <button id='addCart' onclick="addCart('${prod.nome}',${prod.preco})"><h3>+Carrinho</h3></button>
             </div>
       `;
     })
