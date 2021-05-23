@@ -1,0 +1,56 @@
+[
+  {
+    "nome": "Mario Kart 8",
+    "id": 1,
+    "preco": 110.0,
+    "image": "./images/Mario Kart 8.jpg"
+  },
+  {
+    "nome": "The Legend of Zelda, Breath of the Wild",
+    "id": 2,
+    "preco": 210.0,
+    "image": "./images/Zelda.jpg"
+  },
+  {
+    "nome": "Donkey Kong Country: Tropical Frezeze",
+    "id": 3,
+    "preco": 190.0,
+    "image": "./images/DK.jpg"
+  },
+  {
+    "nome": "Animal Crossing: New Horizons",
+    "id": 4,
+    "preco": 95.0,
+    "image": "./images/Animal Crossing.jpg"
+  },
+  {
+    "nome": "Monster Hunter Rising",
+    "id": 5,
+    "preco": 159.0,
+    "image": "./images/Monster Hunter.jpg"
+  },
+  {
+    "nome": "Hollow Knight",
+    "id": 6,
+    "preco": 160.0,
+    "image": "./images/Hollow Knight.jpg"
+  },
+  {
+    "nome": "Super Mario Odyssey",
+    "id": 7,
+    "preco": 250.0,
+    "image": "./images/Mario Odyssey.jpg"
+  },
+  {
+    "nome": "Pokémon Sword",
+    "id": 8,
+    "preco": 196.0,
+    "image": "./images/Pokemon.jpg"
+  },
+  {
+    "nome": "Splatoon 2",
+    "id": 9,
+    "preco": 177.0,
+    "image": "./images/Splatoon.jpg"
+  }
+]

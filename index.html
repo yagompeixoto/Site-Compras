@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compre Nintendo</title>
+    <script
+      src="https://kit.fontawesome.com/c953df8e7b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+  <body>
+    <div id="cart">
+      <div id="cartWindow">
+        <header id="cartHeader">
+          <p>Carrinho</p>
+          <span onclick="closeCart()">Fechar</span>
+        </header>
+        <div id="desc">
+          <p>Descrição:</p>
+          <p>Preço:</p>
+        </div>
+        <div id="cartItens">
+          <div id="cartItensName"></div>
+          <div id="cartItensPrice"></div>
+        </div>
+      </div>
+      <div id="cartEnd">
+        <span onclick="finalizarCompra()">Finalizar Compra</span>
+      </div>
+    </div>
+
+    <div id="header">
+      <h1>Jogos Diponíveis</h1>
+      <h1>
+        <i
+          class="fas fa-shopping-cart"
+          id="buttonCarrinho"
+          onclick="showCart()"
+        ></i>
+      </h1>
+    </div>
+
+    <div id="container">
+      <div id="produts"></div>
+    </div>
+    <script src="js/import.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
