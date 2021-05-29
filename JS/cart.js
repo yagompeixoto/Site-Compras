@@ -18,29 +18,23 @@ addCart = (name, valor) => {
   document.getElementById("cartItensName").innerHTML = `${itensN
     .map((pos) => {
       return `
-
-    <p id="${itensN.indexOf(pos)}">${pos}</p>
-    `;
-    })
+      <p id="${itensN.indexOf(pos)}">${pos}</p>`})
     .join("")}`;
+    
   document.getElementById("cartItensPrice").innerHTML = `${itensP
     .map((pos) => {
       return `
-   <p id="${itensP.indexOf(pos)}">${Number(pos)
-        .toFixed(2)
-        .replace(
-          ".",
-          ","
-        )} <span id="remove" onclick="removeItem(${itensP.indexOf(
-        pos
-      )})">X</span></p>
-  
-   
-   `;
+   <p id="${itensP.indexOf(pos)}">${Number(pos).toFixed(2).replace(".",",")}
+    <span id="remove" onclick="removeItem(${itensP.indexOf(pos)})">X</span></p>`;
     })
     .join("")}`;
 };
 
+qtdCart = () => {
+  document.getElementById("buttonCart").innerHTML = `
+    <span id="qtdCart">${itensP.length}</span>
+  `
+}
 removeItem = (posicao) => {
   let removeName = document.getElementById(posicao);
   removeName.remove();
@@ -50,4 +44,5 @@ removeItem = (posicao) => {
 
   itensN.splice(posicao, 1);
   itensP.splice(posicao, 1);
+  qtdCart();
 };
